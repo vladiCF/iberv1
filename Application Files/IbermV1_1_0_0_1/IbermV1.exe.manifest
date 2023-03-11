@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="IbermV1.exe" version="1.0.0.1" publicKeyToken="66ba6b5495498748" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="IbermV1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="IbermV1.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IbermV1.exe" size="83392">
+      <assemblyIdentity name="IbermV1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Jlu3ckXbaG02tAMBiwWqRyYi0EKY/Yu9Q0vpFpYoUSc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.IdentityModel.Clients.ActiveDirectory.dll" size="1080680">
+      <assemblyIdentity name="Microsoft.IdentityModel.Clients.ActiveDirectory" version="5.2.8.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GmlxQGBc5PM71/MfnxU1vjCdjGFNsqWcoxZOnG/xs+0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeanutButter.Utils.dll" size="303104">
+      <assemblyIdentity name="PeanutButter.Utils" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>JYfrhATB1/dQQpr35Eel0fU25KJuE0WXG+x0luL/TaU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SimpleTCP.dll" size="20480">
+      <assemblyIdentity name="SimpleTCP" version="1.0.24.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y0FlWWcKuXinFxMVkQhigTGo0Wpy+OmclfbuuH/B5Hw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="IbermV1.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nxJ/Lo79mxoPYSZ8U/K6/s0rkBEHk+cM7lxPpMRjp2M=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ANONIMO\Anonimo" issuerKeyHash="c4555258f282b5b6eda68d2f23329e9411a3665b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>6gSbuGlL65iuyIqj78ekvXTLIgZ6AQul8Vc0yoflFR8=</DigestValue></Reference></SignedInfo><SignatureValue>vcVBONI3/ig2T3U7KGMMSztwayNtnK4WR9E4Xr0ypF+y+48yXi+1drZ3oJoFRO3Zeq2PsEXcrtV1NWPoyApEXd58a2W1SUGr1lUoyT4GiEX98wobATHsNTh/+ibWDYAn2gzRdo9/DFxt4dSYISAg449Qlcz7AbXXedRR5ct4bc4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6XgiHw3SLmdBOks+iLHftEdmVOv3c4lqwNEVfCBuynesBtaKypb9FUiOiePe7U3kYuNm914xdr2ZIadjICaI5NPT8PrRYl9FUF+hqoOWueI54l5Upd46O1QstPtmXp/zVXhd0cmfIhGN4fG+amog+4P4Z8T7Ua3P+yC70hkIVO0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1f15e587ca3457f1a50b017a0622cb74bda4c7efa38ac8ae98eb4b69b89b04ea" Description="" Url=""><as:assemblyIdentity name="IbermV1.exe" version="1.0.0.1" publicKeyToken="66ba6b5495498748" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ANONIMO\Anonimo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>cDLyDX6VvT5noEKxRSaN9amo9Gvn1PT6pnQCLcAZPao=</DigestValue></Reference></SignedInfo><SignatureValue>SuyeZFLH+25/Zabg8XjYXdpHFvtHqEzh3UMCghTwlBf0zBvvCmvY0dC48XVWGNjxekAZiDJkVBRJGJU+mldBmkjaNwuXj6U6biZgjsbLIwwTv80UXaM+KD+PayV9BuLs9qlyUiAIePktEA8ZCjcRG6UzkstC5k21v7j55iaCWHE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6XgiHw3SLmdBOks+iLHftEdmVOv3c4lqwNEVfCBuynesBtaKypb9FUiOiePe7U3kYuNm914xdr2ZIadjICaI5NPT8PrRYl9FUF+hqoOWueI54l5Upd46O1QstPtmXp/zVXhd0cmfIhGN4fG+amog+4P4Z8T7Ua3P+yC70hkIVO0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQTScSJ6Ea6ZlHxhHipUAl7zANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AQQBOAE8ATgBJAE0ATwBcAEEAbgBvAG4AaQBtAG8wHhcNMjMwMzExMTk0MDQzWhcNMjQwMzExMDE0MDQzWjApMScwJQYDVQQDHh4AQQBOAE8ATgBJAE0ATwBcAEEAbgBvAG4AaQBtAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOl4Ih8N0i5nQTpLPoix37RHZlTr93OJasDRFXwgbsp3rAbWisqW/RVIjonj3u1N5GLjZvdeMXa9mSGnYyAmiOTT0/D60WJfRVBfoaqDlrniOeJeVKXeOjtULLT7Zl6f81V4XdHJnyIRjeHxvmpqIPuD+GfE+1Gtz/sgu9IZCFTtAgMBAAEwDQYJKoZIhvcNAQELBQADgYEA3bcjTbE2gL940ojCqDNUrHI9nGPIxCXy/+8eK1wQYIznduj0piw/OEF69ob7UBvUKFAgKEf204oEOyMf/AJySF16VRWQHRZvTIQynbk+NzDzrcdF+qcxaGg3213onBiiIVdKmxDrC5Ns8o9RG+O8kNOfIyM2Ib0BT4ac9FFqTG4=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
